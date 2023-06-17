@@ -1,0 +1,18 @@
+nattunnel v1.23.0 
+Powered By uulap.com,  Please visit https://www.uulap.com  
+
+2023/05/04 11:43:55 [1;34m[I] [service.go:66] admin server listen on 0.0.0.0:7500[0m
+2023/05/04 11:43:55 [1;34m[I] [myrequest.go:502] active server: s2.s100.vip[0m
+2023/05/04 11:43:55 [1;34m[I] [proxy_manager.go:458] proxy added: [wenseio.187091 wenseio.187094 wenseio.187120][0m
+2023/05/04 11:43:56 [1;34m[I] [control.go:357] [0419d6ea1f12b10a] login to server success, get run id [0419d6ea1f12b10a], server udp port [7001][0m
+2023/05/04 11:43:56 [1;34m[I] [control.go:358] [0419d6ea1f12b10a] 服务器连接成功[0m
+2023/05/04 11:43:56 [1;34m[I] [proxy_manager.go:291] [0419d6ea1f12b10a] 隧道 192.168.43.164:22 => s2.s100.vip:12146[0m
+2023/05/04 11:43:56 [1;34m[I] [proxy_manager.go:340] [0419d6ea1f12b10a] [wenseio.187091] 隧道启动成功[0m
+2023/05/04 11:43:56 [1;34m[I] [control.go:199] [0419d6ea1f12b10a] [wenseio.187091] start proxy success[0m
+2023/05/04 11:43:56 [1;34m[I] [proxy_manager.go:291] [0419d6ea1f12b10a] 隧道 192.168.43.164:5000 => s2.s100.vip:26118[0m
+2023/05/04 11:43:56 [1;34m[I] [proxy_manager.go:340] [0419d6ea1f12b10a] [wenseio.187094] 隧道启动成功[0m
+2023/05/04 11:43:56 [1;34m[I] [control.go:199] [0419d6ea1f12b10a] [wenseio.187094] start proxy success[0m
+2023/05/04 11:43:56 [1;34m[I] [proxy_manager.go:291] [0419d6ea1f12b10a] 隧道 192.168.43.164:8888 => s2.s100.vip:8651[0m
+2023/05/04 11:43:56 [1;34m[I] [proxy_manager.go:340] [0419d6ea1f12b10a] [wenseio.187120] 隧道启动成功[0m
+2023/05/04 11:43:56 [1;34m[I] [control.go:199] [0419d6ea1f12b10a] [wenseio.187120] start proxy success[0m
+exit...

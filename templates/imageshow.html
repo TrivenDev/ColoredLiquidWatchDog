@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Image View</h1>
+    <h2>File Name：{{image_name}}</h2>
+    <img src="{{image_url}}" alt="This is a photo."/>
+
+    <br><span>{{info_result}}</span><br>
+    <a class="btn" href="{{ url_for('home') }}">Go back</a>
+{% endblock  %}
+

@@ -1,0 +1,198 @@
+/* 页面整体 max-width: 580px; */
+body {
+    margin: auto;
+    max-width: 880px;
+    min-width: 520px;
+    font-size: 15px;
+    color: #000000;
+    /*background-image: url("../images/bg2.jpg");*/
+    background-color: #abbac6;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* 页脚 */
+footer {
+    color: #000000;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+}
+/* 头像 */
+.avatar {
+    width: 40px;
+}
+
+/* 电影列表 */
+.movie-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border: 2px solid whitesmoke;
+    border-radius: 3px;
+}
+
+.movie-list li {
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-list li:last-child {
+    border-bottom:none;
+}
+/*#f8f9fa*/
+.movie-list li:hover {
+    background-color: gray;
+}
+
+/*纪录列表【新】https://blog.csdn.net/Zhangguohao666/article/details/103425303*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+table caption{
+    font-size: medium;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+th,td{
+    border: 1px solid #999;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+table thead tr{
+    background-color: rgba(0, 89, 92, 0.97);
+    color: #fff;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #636363;
+}
+table tbody tr:nth-child(even){
+    background-color: #525252;
+}
+
+table tbody tr:hover{
+    background-color: #797979;
+}
+
+table tbody tr td{
+    color: #ffffff;
+}
+
+table tfoot tr td{
+    text-align: right;
+    padding-right: 20px;
+    background: #1e1e1e;
+}
+
+/* 龙猫图片 */
+.totoro {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.bigtitle {
+    display:inline;
+    justify-content: flex-start;
+    margin: 5px;
+}
+.on_off {
+    display:inline;
+    font-size: 16px;
+    color: #22ba00;
+    justify-content: flex-end;
+    margin-left: 50px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+
+
+
+.float-right {
+    float: right;
+}
+
+.image_btn {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    background: #F5C518;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+
+/* 输入数据表单，覆盖某些浏览器对 input 元素定义的字体 */
+input[type=submit] {
+    font-family: inherit;
+}
+
+input[type=text] {
+    border: 1px solid gray;
+    
+}
+input[type=password] {
+    border: 1px solid gray;
+
+}
+
+
+.btn {
+    font-size: 12px;
+    padding: 3px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    border: 1px solid black;
+}
+.alert {
+    position: relative;
+    padding: 7px;
+    margin: 7px 0;
+    border: 1px solid transparent;
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    border-radius: 5px;
+}
+/*为了让表单中的删除按钮和旁边的编辑链接排成一行*/
+.inline-form {
+    display: inline;
+}

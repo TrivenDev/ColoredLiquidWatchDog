@@ -1,0 +1,184 @@
+卷 Document 的文件夹 PATH 列表
+卷序列号为 9C7F-10F7
+D:
+.  				根目录
+│  app.py  			Flask视图函数所在位置
+│  base_camera.py 	摄像头基本使用函数
+│  camera_opencv.py  	OpenCV图像处理有关函数
+│  data.db			SQLite数据库
+│  ICM20948.py		姿态传感器
+│  info.py			获取CPU温度等信息
+│  initServo.py		组装舵机时用于初始化舵机角度
+│  Kalman_filter.py	卡尔曼滤波
+│  linkageREVERSE.py	连杆逆解（没有用到）
+│  list.txt			文件夹树形目录
+│  myTest.py		简单的测试功能（没有用到）
+│  nohup.out		--
+│  OLED.py			OLED小屏幕有关函数
+│  PCA9685.py		舵机控制模块有关函数
+│  PIPPY.py			机器狗运动的偏底层函数
+│  README.md		--
+│  robot.py			机器狗运动的封装函数
+│  setup.py			安装相关依赖
+│  simpleTest.py		简单的测试功能（没有用到）
+│  ultra.py			超声波测距相关函数
+│  Voltage.py		获取电池电压
+│  webServer.py		主程序入口
+│  
+├─dist			控制台Web页面资源
+│  │  123.txt
+│  │  favicon.ico
+│  │  index.html
+│  │  logo.png
+│  │  manifest.json
+│  │  precache-manifest.02b800736c2da055bda815acfa037b17.js
+│  │  robots.txt
+│  │  service-worker.js
+│  │  
+│  ├─css
+│  │      app.8a756fac.css
+│  │      chunk-vendors.a639f090.css
+│  │      css.txt
+│  │      
+│  ├─fonts
+│  │      fonts.txt
+│  │      materialdesignicons-webfont.2d0a0d8f.eot
+│  │      materialdesignicons-webfont.b4917be2.woff
+│  │      materialdesignicons-webfont.d0066537.woff2
+│  │      materialdesignicons-webfont.f5111234.ttf
+│  │      roboto-latin-100.5cb7edfc.woff
+│  │      roboto-latin-100.7370c367.woff2
+│  │      roboto-latin-100italic.f8b1df51.woff2
+│  │      roboto-latin-100italic.f9e8e590.woff
+│  │      roboto-latin-300.b00849e0.woff
+│  │      roboto-latin-300.ef7c6637.woff2
+│  │      roboto-latin-300italic.14286f3b.woff2
+│  │      roboto-latin-300italic.4df32891.woff
+│  │      roboto-latin-400.479970ff.woff2
+│  │      roboto-latin-400.60fa3c06.woff
+│  │      roboto-latin-400italic.51521a2a.woff2
+│  │      roboto-latin-400italic.fe65b833.woff
+│  │      roboto-latin-500.020c97dc.woff2
+│  │      roboto-latin-500.87284894.woff
+│  │      roboto-latin-500italic.288ad9c6.woff
+│  │      roboto-latin-500italic.db4a2a23.woff2
+│  │      roboto-latin-700.2735a3a6.woff2
+│  │      roboto-latin-700.adcde98f.woff
+│  │      roboto-latin-700italic.81f57861.woff
+│  │      roboto-latin-700italic.da0e7178.woff2
+│  │      roboto-latin-900.9b3766ef.woff2
+│  │      roboto-latin-900.bb1e4dc6.woff
+│  │      roboto-latin-900italic.28f91510.woff
+│  │      roboto-latin-900italic.ebf6d164.woff2
+│  │      
+│  ├─img
+│  │  │  bg.jpg
+│  │  │  bg2.jpg
+│  │  │  img.txt
+│  │  │  
+│  │  └─icons
+│  │          favicon-32x32 .png
+│  │          favicon.ico
+│  │          icons.txt
+│  │          logo.png
+│  │          safari-pinned-tab.svg
+│  │          wavelogo.png
+│  │          
+│  └─js
+│          app.38235a8c.js
+│          app.38235a8c.js.map
+│          chunk-vendors.3007e197.js
+│          chunk-vendors.3007e197.js.map
+│          js.txt
+│          
+├─models			MQTT相关函数、目标检测模型文件
+│  │  best13c-320.onnx
+│  │  best14c320.onnx
+│  │  colorList.py
+│  │  compareArray.py
+│  │  mqttTools.py
+│  │  
+│  ├─ali-example-code
+│  │  │  aliLink.py
+│  │  │  mqttd.py
+│  │  │  readme.md
+│  │  │  rpi.py
+│  │  │  run.py
+│  │  │  
+│  │  └─__pycache__
+│  │          aliLink.cpython-37.pyc
+│  │          mqttd.cpython-37.pyc
+│  │          rpi.cpython-37.pyc
+│  │          
+│  ├─python-linkkit-examples
+│  │      data_transfer.js
+│  │      dynamic_register.py
+│  │      dynamic_register_deprecated.py
+│  │      dynamic_register_nwl.py
+│  │      gateway_demo.py
+│  │      model_raw.json
+│  │      mqtt_connect_TCP.py
+│  │      mqtt_connect_TLS.py
+│  │      mqtt_sub_pub_on.py
+│  │      ota_demo.py
+│  │      Readme.txt
+│  │      thing_alink.py
+│  │      thing_custom.py
+│  │      tsl.json
+│  │      
+│  └─__pycache__
+│          colorList.cpython-37.pyc
+│          compareArray.cpython-37.pyc
+│          mqttTools.cpython-37.pyc
+│          
+├─static			异常记录Web页面资源
+│  ├─css
+│  │      style.css
+│  │      
+│  ├─images
+│  │      avatar.png
+│  │      bg.jpg
+│  │      bg2.jpg
+│  │      logo.png
+│  │      totoro.gif
+│  │      yanni.png
+│  │      
+│  └─runs
+│      └─imagesave
+├─templates			异常记录Web页面资源
+│      base.html
+│      edit.html
+│      imageshow.html
+│      login.html
+│      record.html
+│      settings.html
+│      
+├─waveshare_OLED		OLED有关函数库
+│  │  config.py
+│  │  OLED_0in91.py
+│  │  __init__.py
+│  │  
+│  └─__pycache__
+│          config.cpython-37.pyc
+│          config.cpython-39.pyc
+│          OLED_0in91.cpython-37.pyc
+│          OLED_0in91.cpython-39.pyc
+│          __init__.cpython-37.pyc
+│          __init__.cpython-39.pyc
+│          
+└─__pycache__
+        app.cpython-37.pyc
+        base_camera.cpython-37.pyc
+        camera_opencv.cpython-37.pyc
+        ICM20948.cpython-37.pyc
+        info.cpython-37.pyc
+        info.cpython-39.pyc
+        Kalman_filter.cpython-37.pyc
+        OLED.cpython-37.pyc
+        OLED.cpython-39.pyc
+        PCA9685.cpython-37.pyc
+        PIPPY.cpython-37.pyc
+        robot.cpython-37.pyc
+        ultra.cpython-37.pyc
+        Voltage.cpython-37.pyc
+        

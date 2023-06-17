@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{#数据库 user records#}
+{% block content %}
+{#    添加新项目,required表示这个输入项必须填写才可以提交这个表单#}
+    {% if current_user.is_authenticated %}
+    <form method="post">
+        <p>Add New Item Here:</p>
+        Title <input  type="text" name="title" autocomplete="on" required>
+        Color <input  type="text" name="color" autocomplete="on" required>
+        Date <input  type="date"  name="date" autocomplete="on" required>
+        Time <input  type="time" step="1"  name="time" autocomplete="on" required>
+        <input class="btn" type="submit" name="submit" value="Add">
+    </form>
+    {% endif %}
+{#    step=1表示精确到秒#}
+
+    <table class="movie-list">
+    <caption>Unusual-Records</caption>
+    <thead>
+        <tr><th>Title</th><th>Color</th><th>Date</th><th>Time</th><th>Options</th></tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+        <tr>
+            <td>{{ record.title }}</td><td>{{ record.color }}</td><td>{{ record.date }}</td><td>{{ record.time }}</td>
+            <td><span class="float-right">
+                {% if current_user.is_authenticated %}
+                <a class="btn" href="{{ url_for('edit', record_id=record.id) }}">Edit</a>
+                <form class="inline-form" method="post" action="{{ url_for('delete', record_id=record.id) }}">
+                    <input class="btn" type="submit" name="delete" value="Delete" >
+<!--                    onclick="return confirm('Are you sure to DELETE this record?')"-->
+                </form>
+                {% endif %}
+                <a class="image_btn" href="{{ url_for('imageshow', record_id=record.id) }}" target="_blank" title="Open this record's Image?">Image</a>
+            </span></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+        <tfoot><tr><td colspan="5">{{ records|length }} Titles</td></tr></tfoot>
+{#    表尾是数目统计，使用了单元格合并#}
+
+    </table>
+    <img class="totoro" src="../static/images/totoro.gif" alt="Totoro" >
+
+{% endblock %}

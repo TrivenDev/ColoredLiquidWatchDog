@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{#user.username records.xxx#}
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  meta 指定了页面会按照设备的宽度自动适应-->
+    <title>{{ user.nickname }}'s WatchPort</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/avatar.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    {% endblock %}
+</head>
+
+<body>
+    {% for message in get_flashed_messages() %}
+    <div class="alert">{{ message }}</div>
+    {% endfor %}
+{#    标题头#}
+    <h2 class="bigtitle">
+        <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='images/avatar.png') }}">
+        {{ user.nickname }}'s WatchPort
+    </h2>
+    <div class="on_off">Online</div>
+<!--    导航栏-->
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}" target="_blank">CtrlPanel</a></li>
+            <li><a href="{{url_for('home') }}">Records</a></li>
+            {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('settings') }}">Settings</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+
+
+    {% block content %}
+
+    {% endblock content%}
+
+    <footer>
+        <small style="color: black">&copy; 2023 <a href="https://blog.csdn.net/Wensacsdn">McEwan</a></small>
+    </footer>
+</body>
+
+</html>

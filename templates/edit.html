@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Edit item</h3>
+<form method="post">
+    Title <input type="text" name="title" autocomplete="on" required value="{{ record.title }}">
+    Color <input type="text" name="color" autocomplete="on" required value="{{ record.color }}">
+    Date <input type="date" name="date" autocomplete="on" required value="{{ record.date }}">
+    Time <input type="time" name="time" step="1" autocomplete="on" required value="{{ record.time }}">
+    <input class="btn" type="submit" name="submit" value="Update">
+</form>
+{% endblock %}
