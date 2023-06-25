@@ -48,6 +48,10 @@
 
 ## 更新记录
 
+### 2023-06-24
+
+更新README文档，更新可能要用到的资料链接。
+
 ### 2023-06-16  Version 1.0
 
 上传机器狗主程序代码，基本完成README文档的编写，尚未上传训练数据集和YOLO训练程序代码。
@@ -74,13 +78,15 @@
 
 ## 安装和配置
 
-系统环境：刷入【2021-10-18-raspbian-buster-full.7z】系统包的树莓派4B
+系统环境：刷入【2021-10-18-raspbian-buster-full.7z】系统包的树莓派4B。
 
-可能需要的依赖包：
+WiFi网络：要连接到自己的热点，首先需要拧开后背上的四颗螺丝，将SD卡取出，用读卡器插到电脑上。接着在wpa_supplicant.conf文件（见网盘附件）中写入自己的手机热点的名字和密码。然后复制ssh文件和wpa_supplicant.conf文件（见网盘附件）到SD卡上，将SD卡插入到树莓派上。最后打开自己的手机热点并启动树莓派，看到树莓派连接到热点上即为成功。
 
-可直接执行【setup.py】安装依赖包，之后再升级OpenCV到4.5.5。
+Python依赖库：可直接执行【setup.py】安装依赖包，之后再升级OpenCV到4.5.5。
 
 **注：如果想用GPU进行推理，不要用.whl文件安装OpenCV，因为.whl是编译好的包，基本上可以确定是用CPU推理的。GPU推理版要手动设定安装参数进行安装，具体方法请自行百度。**
+
+可能需要的依赖包：
 
 ```sh
 sudo apt update
@@ -127,9 +133,11 @@ python3 webServer.py
 
 之前启动工作程序所在的命令行**无法通过Ctrl+C或Ctrl+D关掉程序**，应使用如下方法关闭：
 
-1）再打开一个命令行；
+(1）再打开一个命令行；
 
-2）直接输入`sudo killall python3`，然后回车。
+(2）直接输入`sudo killall python3`，然后回车。
+
+
 
 ### 3）添加或修改Web页面的用户名和密码
 
@@ -154,7 +162,11 @@ Done.
 
 3）编辑代码后，点击PyCharm上方的工具——部署——上传到...，即可将该文件上传到树莓派的对应位置。工作目录中的其他文件或文件夹同样可以在PyCharm左侧选中它们，然后右键——部署——上传。
 
+
+
 ## 项目结构
+
+注：可查看README源代码看到正常渲染的目录结构。
 
 .  				根目录
 │  app.py  			Flask视图函数所在位置
@@ -345,8 +357,9 @@ Done.
 - [ultralytics/yolov5 at v6.1 (github.com)](https://github.com/ultralytics/yolov5/tree/v6.1)— YOLOv5项目主页（v6.1）
 - [Flask 入门教程 (helloflask.com)](https://tutorial.helloflask.com/)——Flask入门教程
 - [NATTUNNEL 内网穿透 – 量子互联 (uulap.com)](https://www.uulap.com/nattunnel)——量子互联内网穿透
-
-
+- [MobaXterm Xserver with SSH, telnet, RDP, VNC and X11 - Download (mobatek.net)](https://mobaxterm.mobatek.net/download.html) ——MobaXterm
+- 百度网盘：https://pan.baidu.com/s/1-BUoXd8oCyYGEy-90Em37Q?pwd=3oqn ——可能用到的资料包，提取码：3oqn 
+	
 
 ## 联系作者
 
@@ -366,7 +379,3 @@ Done.
 - Flask
 - OpenCV
 
-
-## 使用许可
-
-[MIT](LICENSE) © Richard Littauer
